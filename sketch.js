@@ -15,7 +15,12 @@ var nextX = 450;
 var nextY = 350;
 var imgNext = "";
 
+preload = () => {
+    theme = loadSound('theme.mp3');
+}
+
 function setup() {
+    theme.play();
     noLoop();
     frameRate(frames);
     tetris = new block();
